@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        EXAMEN PRIMER PARCIAL
+    </title>
+    <link rel="stylesheet" href="/public/vendor/bootstrap-5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/public/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Registro al Club de Aventureros Digitales</h1>
+        <h2>CLUB SPRING</h2>
+        <h3>¡Únete al Club de Aventureros Digitales y descubre un mundo lleno de creatividad, tecnología y diversión! Aquí aprenderás, explorarás nuevas herramientas y vivirás experiencias únicas que te convertirán en un verdadero explorador del universo digital. ¡Regístrate y comienza tu aventura hoy!</h3>
+        <p></p>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">CLUB SPRING DE LAS CASAS</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#item-1">Actividades</a></li>
+                <li class="nav-item"><a class="nav-link" href="#item-2">Contacto</a></li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Más</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Galería</a></li>
+                <li><a class="dropdown-item" href="#">Administración</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Contáctanos</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <h1>FORMULARIO DE REGISTRO</h1>
+        <figure>
+            <img src="/public/img/descarga.jpeg" alt="" style="width: 1000px;">
+        </figure>
+        <form action="formulario.html" method="get">
+            <fieldset>
+                <legend>Información básica</legend>
+                <label for="primerNombre">Primer nombre: </label>
+                <input type="text" name="primerNombre" id="primerNombre" value="JOSE" required minlength="2" maxlength="10" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ]+" title="Solo letras y espacios">
+                <label for="segundoNombre">Segundo nombre:</label>
+                <input type="text" name="segundoNombre" id="segundoNombre" value ="IGNACIO" required title="Solo letras y espacios">
+                <hr>
+                <label for="primerApellido">Primer apellido:</label>
+                <input type="text" name="primerApellido" id="primerApellido" value="LEITON" required title="Solo letras y espacios">
+                <label for="segundoApellido">Segundo apellido:</label>
+                <input type="text" name="segundoApellido" id="segundoApellido" value="HARO" required title="Solo letras y espacios">
+                <hr>
+                <label for="cedula">Cédula:</label>
+                <input type="text" name="cedula" id="cedula" value="1720020112" required maxlength="10" minlength="10" title="Solo diez dígitos">
+                <hr>
+                <label for="fechaNacimiento">Fecha de nacimiento:</label>
+                <input type="date" name="fechaNacimiento" id="fechaNacimiento" value="2000-03-26">
+                <label for="edad">Edad:</label>
+                <input type="number" name="edad" id="edad" value="25" min="10" max="100" required title="min 10 max 100"> 
+                <hr>
+                <label for="">Genero:</label>
+                <input type="radio" name="genero" id="masculino" value="masculino" required title="Seleccionar uno">
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="genero" id="femenino" value="femenino" required title="Seleccionar uno">
+                <label for="femenino">Femenino</label>
+                <input type="radio" name="genero" id="otro" value="otro" required title="Seleccionar uno">
+                <label for="otro">Otro</label>
+                <hr>
+                <label for="peso">Peso (kg): </label>
+                <input type="number" name="peso" id="peso" value="75" step="1" max="100" min="20" title="minimo 20 maximo 100">
+                <label for="altura">Altura (cm): </label>
+                <input type="number" name="altura" id="altura" value="173" step="1" max="200" min="150" title="minimo 150 maximo 200">
+                <hr>
+            </fieldset>
+            <fieldset>
+                <legend>Información de contacto</legend>
+                <label for="telefono">Teléfono: </label>
+                <input type="tel" name="telefono" id="telefono" value="0979357401" maxlength="10" minlength="10" required title="minimo 10 maximo 10">
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" value="jileit@hotmail.com" required>
+                <hr>
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" name="contrasena" id="contrasena" value="Aa1@" required minlength="8" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&]).{8,}" title="Al menos una mayúscula, una minúscula,un número y un símbolo ">
+                <label for="contrasena2">Confirmar Contraseña:</label>
+                <input type="password" name="contrasena2" id="contrasena2" value="Aa1@" required minlength="8" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&]).{8,}" title="Al menos una mayúscula, una minúscula,un número y un símbolo ">
+                <br>
+                <small>Al menos una mayúscula, una minúscula, un número y un símbolo </small>
+                <hr>
+                
+                <fieldset>
+                <legend>ESCOJA SU PAIS</legend>
+                <select name="pais[]" id="pais" required size="25" autofocus title="ESCOJA OBLIGATORIAMENTE">
+                    <optgroup title="paises1" label="SUDAMERICA">
+                        <option value="pais_a">ECUADOR</option>
+                        <option value="pais_b">PERU</option>
+                        <option value="pais_c">COLOMBIA</option>
+                        <option value="pais_d">CHILE</option>
+                    </optgroup>
+                    <optgroup title="paises2" label="EUROPA">
+                        <option value="pais_a">ECUADOR</option>
+                        <option value="pais_b">PERU</option>
+                        <option value="pais_c">COLOMBIA</option>
+                        <option value="pais_d">CHILE</option>
+                    </optgroup>
+                    <optgroup title="paises3" label="ASIA">
+                        <option value="pais_a">CHINA</option>
+                        <option value="pais_b">JAPON</option>
+                        <option value="pais_c">KOREA</option>
+                        <option value="pais_d">CHINA2</option>
+                    </optgroup>
+                </select>
+                </fieldset>
+
+                <hr>
+                <label for="provincia">Provincia:</label>
+                <input type="text" name="provincia" id="provincia" value="QUITO" required>
+                <hr>
+                <label for="sector">Sector:</label>
+                <input type="text" name="sector" id="sector" value="LAS CASAS" required>
+                <hr>
+
+            </fieldset>
+
+                <label for="aceptar">ACEPTAR TERMINOS</label>
+                <input type="checkbox" name="aceptar" id="aceptar" required title="Acepte los terminos y condiciones para poder avanzar">
+                <button type="submit">SUBIR</button>
+                <button type="reset">RESETEAR</button>
+                
+        </form>
+
+        <aside>
+            <h1>BENEFICIOS DEL CLUB</h1>
+            <ul>
+                <li>Desarrollo personal: fomenta habilidades sociales, liderazgo, organización y trabajo en equipo.</li>
+                <li>Aprendizaje continuo: permite adquirir nuevos conocimientos y experiencias en un ambiente práctico.</li>
+                <li>Networking: conocer personas con intereses similares y crear relaciones valiosas.</li>
+                <li>Motivación y apoyo: el grupo impulsa a sus miembros a alcanzar metas y compartir logros.</li>
+                <li>Diversión y bienestar: ofrece actividades recreativas que reducen el estrés y mejoran el ánimo.</li>
+                <li>Sentido de pertenencia: genera identidad y comunidad entre los participantes.</li>
+                <li>Oportunidades de crecimiento: acceso a talleres, eventos, competencias o certificaciones.</li>
+                <li>Reconocimiento: participación en proyectos o logros que pueden destacarse académica o profesionalmente.</li>
+            </ul>
+        </aside>
+
+    </main>
+    <footer>
+        <a href="">@JOSE LEITON DERECHOS RESERVADOS</a>
+    </footer>
+    <script src="/public/vendor/bootstrap-5/js/bootstrap.min.js"></script>
+    <script src="/public/vendor/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
